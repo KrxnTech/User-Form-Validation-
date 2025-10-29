@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+HTML,
+BODY {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: var(--app-bg);
+    color: var(--text);
+}
+
+:root {
+    --app-bg: #f6f7fb;
+    --surface: #ffffff;
+    --surface-muted: #f3f4f6;
+    --text: #111827;
+    --muted-text: #6b7280;
+    --border: #e5e7eb;
+    --input-border: #d1d5db;
+    --accent: #2563eb;
+    --accent-contrast: #ffffff;
+    --accent-soft: rgba(37, 99, 235, 0.2);
+}
+
+#FORM {
+    width: 100%;
+    max-width: 420px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--surface);
+    border-radius: 10px;
+    box-shadow: 0px 6px 16px rgba(17, 24, 39, 0.08);
+    padding: 20px;
+    border: 1px solid var(--border);
+}
+
+#ADD_EXPENSE {
+    font-weight: 600;
+    text-align: center;
+    padding: 8px 10px 16px;
+}
+
+input {
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    padding: 12px;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+select {
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    padding: 12px;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+.HEADING {
+    font-weight: 500;
+    font-size: 15px;
+    padding: 5px 2px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    color: var(--muted-text);
+}
+
+button {
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    padding: 12px;
+    margin: 12px 0 0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s all ease;
+    width: 100%;
+    background-color: var(--surface);
+    color: var(--text);
+}
+
+button:hover {
+    background-color: var(--accent);
+    color: var(--accent-contrast);
+    border-color: var(--accent);
+}
+
+input:focus-visible,
+select:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--accent-soft);
+    outline-offset: 2px;
+}
